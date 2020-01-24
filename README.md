@@ -14,7 +14,7 @@ kaDalu project offers a lightweight Persistent storage solution for applications
 
 - *Secure and Scalable*
 
- Natively integrated with Kubernetes for secured access to Storage servers.
+  Natively integrated with Kubernetes for secured access to Storage servers.
 
 - *Powered by GlusterFS*
 
@@ -22,10 +22,11 @@ kaDalu project offers a lightweight Persistent storage solution for applications
 
 - *Works with all Kubernetes*
 
- Kadalu works with upstream Kubernetes, Openshift and many others.
+  Kadalu works with upstream Kubernetes, Openshift and many others.
 
 - *Effective Monitoring*
 
- Kadalu comes with built-in health, utilization and performance metrics measures. Easy to integrate into observability patterns
+   Kadalu comes with built-in health, utilization and performance metrics measures. Easy to integrate into observability
+   patterns
 
 
