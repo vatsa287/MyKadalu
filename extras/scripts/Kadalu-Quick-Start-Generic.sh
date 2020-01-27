@@ -33,10 +33,10 @@ if [ $answer2 == 'y' ] ; then
 		read devPath
 
 		#example /home/vatsa/tryKadalu/disk/test-storage
-                kubectl kadalu storage-add $storagePool --device $device:$devPath
+                sudo kubectl kadalu storage-add $storagePool --device $device:$devPath
 	        echo "Storage Pool with name $storagePool created"
                 
-        elif [ $answer3 == "create" ] ; then
+        else
 
 	        echo -e "Enter the path of the device file to be created"
 	        read dev
@@ -53,7 +53,7 @@ if [ $answer2 == 'y' ] ; then
 
 	
 
-else
+fi
 
 
 	echo "Checking Status of the Pods"
@@ -78,6 +78,7 @@ else
 	sudo kubectl create -f /tmp/${pvcFileName}.yaml
         
         #Since get pvc shows status as pending we can wait to halt the process for few seconds , example 100sec
+        echo "Sleep 100s for status update"
         sleep 100
 	sudo kubectl get pvc
 
@@ -91,14 +92,15 @@ else
 	sed -i s/pod1/$podName/  /tmp/${podFileName}.yaml
 	sed -i s/pv1/$pvcName/  /tmp/${podFileName}.yaml
 	sudo kubectl create -f /tmp/$podFileName.yaml
-
+        
+        echo "Sleep 100s for status update"
         sleep 100
  
         #Status of the Pod
         sudo kubectl get pods
 
 
-fi
+
     
 
 
