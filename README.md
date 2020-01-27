@@ -29,5 +29,5 @@ kaDalu project offers a lightweight Persistent storage solution for applications
    Kadalu comes with built-in health, utilization and performance metrics measures. Easy to integrate into observability
    patterns
    
-[Know more here!](http://kadalu,io "Know more here!")
+[Know more here!](https://kadalu.io "Know more here!")
 
