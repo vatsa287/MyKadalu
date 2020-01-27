@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#NOT A GENERIC SCRIPT!
 #Deploy Kadalu Operator
 echo -e "Do you want to deploy Kadalu or is it already deployed [y/n]"
 read answer1
