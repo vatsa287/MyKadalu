@@ -51,11 +51,7 @@ if [ $answer2 == 'y' ] ; then
         
         fi
 
-	
-
 fi
-
-
 	echo "Checking Status of the Pods"
         
         #Status of Pods with Kadalu namespace.
@@ -98,10 +94,3 @@ fi
  
         #Status of the Pod
         sudo kubectl get pods
-
-
-
-    
-
-
-
